@@ -1,0 +1,106 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1240px;
+    height: 100%;
+    max-height: 600px;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    height: 100vh;
+    max-height: 446px;
+    background-color: var(--background-card);
+    
+    display: grid;
+    grid-template-areas: "titulo imagem"
+        "informacoes imagem";
+
+    grid-template-columns: repeat(auto-fit, minmax(auto, 560px));
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 223px));
+    ;
+    border-radius: 10px;
+    column-gap: 50px;
+}
+
+.card-titulo {
+    grid-area: titulo;
+    margin: 40px;
+    color: var(--título-principal);
+    font-family: "Lexend Deca";
+}
+
+.card-titulo h1 {
+    text-align: start;
+    font-size: 4.0rem;
+    margin-bottom: 20px;
+}
+
+.card-titulo h1 span {
+    font-size: 4.0rem;
+    color: var(--transparencia);
+}
+
+.card-titulo p {
+    color: var(--títulos-estatisticos);
+    font-family: "Lexend Deca";
+    font-size: 1.5rem;
+    margin-right: 100px;
+    line-height: 2.5rem;
+}
+
+.card-informacoes {
+    color: var(--título-principal);
+    grid-area: informacoes;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    font-family: "Inter";
+    margin-bottom: 50px;
+}
+
+.image {
+    background-color: var(--transparencia);
+    grid-area: imagem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 60%;
+}
+
+.card-informacoes ul li p {
+    font-size: 1.2rem;
+    color: var(--títulos-estatisticos);
+    font: 300;
+    text-transform: uppercase;
+    font-family: "Lexend Deca";
+    margin-top: 7px;
+}
+
+.card-informacoes ul li h2 {
+    font-size: 2.7rem;
+}
+
+.card-informacoes ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

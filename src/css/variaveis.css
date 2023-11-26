@@ -1,0 +1,8 @@
+:root {
+    --background: hsl(233, 47%, 7%);
+    --background-card: hsl(244, 38%, 16%);
+    --transparencia: hsl(277, 64%, 61%);
+    --título-principal: hsl(0, 0%, 100%);
+    --paragrafo-principal: hsla(0, 0%, 100%, 0.75);
+    --títulos-estatisticos: hsla(0, 0%, 100%, 0.6);
+}
